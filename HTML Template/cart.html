@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title>Cart</title>
+
+    <!-- Bootstrap styesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Owl Carousel for carousel slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+    <!-- Custom CSS reference-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+    <!--header-start-->
+    
+      <header id="header">
+        <!-- Strip start
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light"> 
+            <p class="font-b612 font-size-14 text-black-50 m-0  ">this is a test paragraph</p>
+            <div class="font-b612 font-size-14">
+              <a href="" class = "px-3 border-right border-left text-dark">Login</a>
+              <a href="" class = "px-3 border-right text-dark">Cart</a>
+            </div>
+        </div>
+        Strip section may not be needed-->
+
+        <!-- Navigation Bar start (Template taken for the Bootstrap website)-->
+        <nav class="navbar navbar-expand-lg navbar-dark color-secondary-bg  ">
+          <a class="navbar-brand" href="#">E-<b>CART</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto font-b612">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Browse Listings<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Your Listings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Login/Register
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Login</a>
+                  <a class="dropdown-item" href="#">Register</a>
+                </div>
+              </li>
+            </ul>
+            <form action="#" class="font-size-14 font-b612 mr-2">
+              <a href="#" class="py-2 rounded-pill color-primary-bg">
+                <span class="font-size-16 px-2 text-white"><i class ="fas fa-shopping-cart"></i></span>
+                <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+              </a>
+            </form>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 color-white-bg" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <!--Navigation bar end-->
+      </header>
+    <!--header-end-->
+
+    <!--start main page-->
+      <main id="main-site">
+
+        <!-- cart preview starts-->
+        <section id="cart-preview">
+            <div class="container-fluid w-75 bg-light">
+                <h5 class = "font-b612 font-size-20 py-4">Shopping Cart</h5>
+                   <div class="col-sm-9">
+                        <div class="row border-top py-5 mt-20">
+                            <div class="col-sm-2">
+                                <img src="assets/images/testproduct.jpg" alt="cartitem" height="400px" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-b612 font-size-16">Test Product 1</h5>
+                                <small>Sold by: #User#</small>
+                                <hr>
+                                    <!--Quantity Section start-->
+                                    <div class="qty d-flex">
+                                        <h8 class="font-b612">Quantity:</h8>
+                                        <div class="px-2 d-flex font-b612">
+                                           <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                           <input type="text" data-id="pro1" class="qty_input border px-2 w-50 bg-light" disabled value ="1" placeholder="1"   >
+                                           <button class="qty-down border bg-light" data-id="pro1"><i class="fas fa-angle-down"></i></button>
+                                           <button class="m-auto btn color-red" data-id="pro1"><i class="far fa-trash-alt"></i></button>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <!--Quantity section end-->
+                                <hr>
+                            </div>
+                            <div class="col-sm-2 text-right">
+                                <div class="font-size-14 font-b612">
+                                    <span class="product_price">$1234</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                   </div>
+                   <div class="col-sm-9">
+                    <div class="row border-top py-5 mt-20">
+                        <div class="col-sm-2">
+                            <img src="assets/images/testproduct2.jpg" alt="cartitem" height="400px" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="font-b612 font-size-16">Test Product 2</h5>
+                            <small>Sold by: #User#</small>
+                            <hr>
+                                <!--Quantity Section start-->
+                                <div class="qty d-flex">
+                                    <h8 class="font-b612">Quantity:</h8>
+                                    <div class="px-2 d-flex font-b612">
+                                       <button class="qty-up border bg-light" data-id="pro2"><i class="fas fa-angle-up"></i></button>
+                                       <input type="text" data-id="pro2" class="qty_input border px-2 w-50 bg-light" disabled value ="1" placeholder="1"   >
+                                       <button class="qty-down border bg-light" data-id="pro2"><i class="fas fa-angle-down"></i></button>
+                                       <button class="m-auto btn color-red" data-id="pro2"><i class="far fa-trash-alt"></i></button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <!--Quantity section end-->
+                            <hr>  x
+                        </div>
+                        <div class="col-sm-2 text-right">
+                            <div class="font-size-14 font-b612">
+                                <span class="product_price">$444</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="row border-top py-5 mt-20">
+                           <h5>Subtotal:</h5>
+                            
+                            <div class="col-sm text-right">
+                                <div class="font-size-20 font-b612">
+                                    <span class="product_price">$1678</span>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-sm py-3">
+                        <button type="submit" class="btn btn-danger form-control"> Proceed to Checkout</button>
+                    </div>
+            </div>    
+          </section>
+          <!--end of cart preview-->
+      </main>
+    <!--end main page-->
+
+    <!--footer start-->
+      <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-12">
+              <h4>E-<b>CART</b></h4>
+              <p class="font-size-14 font-b612 text-white-50">Be smart, use E-<b>CART</b></p>
+            </div>
+            <div class="col-lg-3 col-12">
+              <h4>Accessibility</h4>
+              <p class="font-size-14 font-b612 text-white-50" id="fblink"> <i class="fas fa-glasses px-3"></i>High Contrast Mode</p>
+            </div>
+            <div class="col-lg-4 col-12">
+              <h4>Social Media Links</h4>
+              <p class="font-size-14 font-b612 text-white-50" id="fblink"> <i class="fab fa-facebook px-3"></i>Facebook</p>
+              <p class="font-size-14 font-b612 text-white-50" id="twitterlink"> <i class="fab fa-twitter px-3"></i>Twitter</p>
+              <p class="font-size-14 font-b612 text-white-50" id="instalink"> <i class="fab fa-instagram px-3"></i>Instagram</p>
+            </div>
+            <div class="col-lg-2 col-12">
+              <h4>About Us</h4>
+              <p class="font-size-14 font-b612 text-white-50" id="aboutuslink"> Learn more about us here!</p>
+             
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!--footer end-->
+
+
+    <!-- Bootstrap JS references -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- OwlCarousel JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!--scripts made by me-->
+    <script src="index.js"></script>
+  </body>
+</html>
